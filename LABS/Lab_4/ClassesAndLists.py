@@ -28,32 +28,37 @@ h2.introduction()
 class student:
     stdName = ""
     stdAge = ""
-    stdMarks = ""
+    stdMarks = []
 
     def introduction(self):
         print("My name is: " + self.stdName)
-        print("My age is: " + str(self.stdAge) + " years")
-        print("My marks are: " + str(self.stdMarks) + "/50")
+        print("My age is: " + self.stdAge + " years")
+        print("My marks in Maths are: " + str(self.stdMarks[0]))
+        print("My marks in english are: " + str(self.stdMarks[1]))
+        print("My marks in Urdu are: " + str(self.stdMarks[2]))
         print("-------------------------------------")
 
 # creating Objects of student class
 std1 = student()
 std1.stdName = "Hamza"
 std1.stdAge = "20"
-std1.stdMarks = "50"
+std1.stdMarks = [21, 30, 45]
+std1.introduction()
 
 std2 = student()
 std2.stdName = "hassan"
-std2.stdAge = "22"
-std2.stdMarks = "30"
+std2.stdAge = "19"
+std2.stdMarks = [50, 45, 49]
+std2.introduction()
 
 std3 = student()
 std3.stdName = "Usama"
-std3.stdAge = "24"
-std3.stdMarks = "40"
+std3.stdAge = "22"
+std3.stdMarks = [15, 35, 42]
+std3.introduction()
 
-#creating list
+# Creating list
 
-List = [std1, std2, std3]
-for eachStd in List:
-    eachStd.introduction()
+studentList = [std1, std2, std3]
+studentList[2].introduction()
+
