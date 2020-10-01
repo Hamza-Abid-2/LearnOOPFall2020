@@ -60,5 +60,11 @@ std3.introduction()
 # Creating list
 
 studentList = [std1, std2, std3]
-studentList[2].introduction()
+#studentList[].introduction()
+#studentList[].introduction()      ---> it is difficult to write in thi form
+#studentList[].introduction()
+
+for eachStudent in studentList:    # so we use for loop to show the list
+    eachStudent.introduction()
+
 
